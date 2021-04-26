@@ -30,7 +30,7 @@
     <ul class="sidebar-menu">
       <li class="header">MENÚ DE NAVEGACIÓN</li>
       <li class="active treeview">
-        <a href="#">
+        <a href="<?= base_url() ?>index.php/admin/Home">
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
         </a>
         <!--<ul class="treeview-menu">
@@ -101,10 +101,129 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="<?= base_url() ?>index.php/admin/Management"><i class="fa fa-circle-o"></i>Usuarios</a></li>
+          <li><a href="<?= base_url() ?>index.php/admin/Management/adf"><i class="fa fa-circle-o"></i>ADF</a></li>
         </ul>
         <ul class="treeview-menu">
-          <li><a href="<?= base_url() ?>index.php/admin/Management/groups"><i class="fa fa-circle-o"></i>Grupos</a></li>
+          <li><a href="<?= base_url() ?>index.php/admin/Management/dgsm"><i class="fa fa-circle-o"></i>DGSM</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/externo"><i class="fa fa-circle-o"></i>Externo</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/g_grados"><i class="fa fa-circle-o"></i>Grupo Grados</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/m_cargos"><i class="fa fa-circle-o"></i>Manejo Cargos</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/novedades"><i class="fa fa-circle-o"></i>Novedades</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/novedades_dom_fac"><i class="fa fa-circle-o"></i>Novedades Dom Fac</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/rest_contrasenas"><i class="fa fa-circle-o"></i>Restricción Contraseñas</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/samafull"><i class="fa fa-circle-o"></i>SAMAFULL</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/siath"><i class="fa fa-circle-o"></i>SIATH</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/t_maquina"><i class="fa fa-circle-o"></i>Tipos de Maquina</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/t_tarjetas"><i class="fa fa-circle-o"></i>Tab Tarjetas</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/u_dependencias"><i class="fa fa-circle-o"></i>Unidades Dependencia</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Management/dep"><i class="fa fa-circle-o"></i>DEP</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-eye"></i> <span>Reportes</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/cargos"><i class="fa fa-circle-o"></i>Cargos</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/cargos_siath"><i class="fa fa-circle-o"></i>Cargos SIATH</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/dgsm"><i class="fa fa-circle-o"></i>DGSM</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/empleados"><i class="fa fa-circle-o"></i>Empleados</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/external"><i class="fa fa-circle-o"></i>Externos</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/gen_t_manejo"><i class="fa fa-circle-o"></i>T. Manejo</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/lst_usr_admin"><i class="fa fa-circle-o"></i>Usuarios Admin</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/manejo_cargos"><i class="fa fa-circle-o"></i>Manejo Cargos</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/novedades"><i class="fa fa-circle-o"></i>Novedades</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/siath"><i class="fa fa-circle-o"></i>SIATH</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/t_manejo"><i class="fa fa-circle-o"></i>T. Manejo</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/t_manejo_vencidas"><i class="fa fa-circle-o"></i>T. Manejo Vencidas</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/tab_t_activas"><i class="fa fa-circle-o"></i>Tab. Tarjetas Vencidas</a></li>
+        </ul>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Views/sev"><i class="fa fa-circle-o"></i>SEV</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-windows"></i> <span>Office 365</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Office365"><i class="fa fa-circle-o"></i> Usuarios</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-exchange"></i> <span>Movimiento Equipos</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Office365"><i class="fa fa-circle-o"></i> Equipos</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-cc"></i> <span>Tarjetas de control</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="<?= base_url() ?>index.php/admin/Office365"><i class="fa fa-circle-o"></i> Tarjetas</a></li>
         </ul>
       </li>
       <li class="treeview">

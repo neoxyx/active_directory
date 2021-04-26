@@ -75,8 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn' => '',
-	'hostname' => '172.20.100.107/ADPRUEBAS',
-	'port' => 14444,
+	'hostname' => '172.20.100.107\ADPRUEBAS,14444',
 	'username' => 'adminad',
 	'password' => 'sql1234',
 	'database' => 'ActiveDirectoryAdded',
@@ -90,6 +89,7 @@ $db['default'] = array(
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
 	'encrypt' => FALSE,
+	'autoinit' => TRUE,
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),

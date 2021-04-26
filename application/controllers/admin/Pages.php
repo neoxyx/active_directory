@@ -25,12 +25,10 @@ class Pages extends CI_Controller
 
 	public function table()
 	{
-		$this->load->model('Denuncias_model');
-		$data['title'] = '<b>Control</b>Denuncias';
-		$data['titlemin'] = '<b>C</b>D';
-		$data['subtitle'] = 'Control Denuncias';
-		$data['titleform'] = 'Seguimiento';
-		$data['denuncias'] = $this->Denuncias_model->get_denuncias();
-		$this->load->view('admin/pages/tables/control_denuncias', $data);
+		$data['title'] = '<b>Directorio</b>Activo';
+		$data['titlemin'] = '<b>D</b>A';
+		$data['subtitle'] = 'Directorio Activo';
+		$data['titleform'] = 'ADF';
+		$this->load->view('admin/pages/tables/data', $data);
 	}
 }

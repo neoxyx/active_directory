@@ -213,6 +213,7 @@
 <!-- page script -->
 <script>
   $(function() {
+    $(".loader-page").fadeOut("slow");
     $("#example1").DataTable({
       "language": {
         "sProcessing": "Procesando...",
@@ -274,32 +275,9 @@
   });
 </script>
 <script>
+  var url = 'http://localhost/active_directory/index.php/admin/';
   $('input[type="checkbox"]').change(function() {
     $(this).val(Number(this.checked));
-  });
-
-  function crearCaso() {
-    $.ajax({
-      url: "<?= base_url() ?>index.php/admin/Caso/create", //url guarda la ruta hacia donde se hace la peticion
-      type: $("#frmCaso").attr("method"), // la variable type guarda el tipo de la peticion GET,POST,..      
-      data: $("#frmCaso").serialize(), // data recive un objeto con la informacion que se enviara al servidor
-      success: function(data) { //success es una funcion que se utiliza si el servidor retorna informacion        
-        $("#idCaso").val(data);
-      }
-    })
-  }
-
-  $("#frmDenuncia").submit(function(e) {
-    e.preventDefault();
-    $.ajax({
-      url: "<?= base_url() ?>index.php/admin/Denuncias/create", //url guarda la ruta hacia donde se hace la peticion
-      type: $("#frmDenuncia").attr("method"), // la variable type guarda el tipo de la peticion GET,POST,..      
-      data: $("#frmDenuncia").serialize(), // data recive un objeto con la informacion que se enviara al servidor
-      success: function(data) { //success es una funcion que se utiliza si el servidor retorna informacion        
-        Swal.fire('Registro creado con éxito');
-        location.reload();
-      }
-    })
   });
 </script>
 </body>
