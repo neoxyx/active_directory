@@ -29,120 +29,11 @@
           <div class="icon">
             <i class="ion ion-person"></i>
           </div>
-          <a href="<?= base_url() ?>index.php/admin/Management/adf" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?= base_url() ?>index.php/admin/Adf/adf" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-green">
-          <div class="inner">
-            <h3>0</h3>
-
-            <p>DGSM</p>
-          </div>
-          <div class="icon">
-            <i class="ion ion-person"></i>
-          </div>
-          <a href="<?= base_url() ?>index.php/admin/Management/dgsm" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-      <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-red">
-          <div class="inner">
-            <h3>0</h3>
-
-            <p>Externo</p>
-          </div>
-          <div class="icon">
-            <i class="ion ion-person-add"></i>
-          </div>
-          <a href="#" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-      <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-yellow">
-          <div class="inner">
-            <h3>0</h3>
-
-            <p>Grupo Grados</p>
-          </div>
-          <div class="icon">
-            <i class="ion ion-card"></i>
-          </div>
-          <a href="#" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-      <!-- ./col -->
-      <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-green">
-          <div class="inner">
-            <h3>0</h3>
-
-            <p>Manejo Cargos</p>
-          </div>
-          <div class="icon">
-            <i class="ion ion-card"></i>
-          </div>
-          <a href="#" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-      <!-- ./col -->
-      <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-red">
-          <div class="inner">
-            <h3>0</h3>
-
-            <p>Novedades</p>
-          </div>
-          <div class="icon">
-            <i class="ion ion-card"></i>
-          </div>
-          <a href="#" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-      <!-- ./col -->
-      <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-yellow">
-          <div class="inner">
-            <h3>0</h3>
-
-            <p>Novedades Dom Fac</p>
-          </div>
-          <div class="icon">
-            <i class="ion ion-card"></i>
-          </div>
-          <a href="#" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-      <!-- ./col -->
-      <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-aqua">
-          <div class="inner">
-            <h3>0</h3>
-
-            <p>Restricción Contraseñas</p>
-          </div>
-          <div class="icon">
-            <i class="ion ion-card"></i>
-          </div>
-          <a href="#" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-      <!-- ./col -->
-      <!-- ./col -->
+      <!-- .col -->
       <div class="col-lg-3 col-xs-6">
         <!-- small box -->
         <div class="small-box bg-red">
@@ -154,7 +45,7 @@
           <div class="icon">
             <i class="ion ion-card"></i>
           </div>
-          <a href="#" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?= base_url() ?>index.php/admin/SAMAFULLController/manageSAMAFULL" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -177,7 +68,7 @@
       <!-- ./col -->
       <div class="col-lg-3 col-xs-6">
         <!-- small box -->
-        <div class="small-box bg-aqua">
+        <div class="small-box bg-green">
           <div class="inner">
             <h3>0</h3>
 
@@ -202,7 +93,7 @@
           <div class="icon">
             <i class="ion ion-card"></i>
           </div>
-          <a href="#" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?= base_url() ?>index.php/admin/ManageCard" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -213,7 +104,7 @@
           <div class="inner">
             <h3>0</h3>
 
-            <p>Unidades Dependencia</p>
+            <p>Reportes</p>
           </div>
           <div class="icon">
             <i class="ion ion-card"></i>
@@ -229,12 +120,44 @@
           <div class="inner">
             <h3>0</h3>
 
-            <p>DEP</p>
+            <p>Office 365</p>
           </div>
           <div class="icon">
             <i class="ion ion-card"></i>
           </div>
-          <a href="#" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="<?= base_url() ?>index.php/admin/DepController/manageDep" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+      <!-- ./col -->
+      <!-- ./col -->
+      <div class="col-lg-3 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-red">
+          <div class="inner">
+            <h3>0</h3>
+
+            <p>Tarjetas de Manejo</p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-card"></i>
+          </div>
+          <a href="<?= base_url() ?>index.php/admin/ManageCard" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+      <!-- ./col -->
+      <!-- ./col -->
+      <div class="col-lg-3 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-aqua">
+          <div class="inner">
+            <h3>0</h3>
+
+            <p>Movimiento Equipos</p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-card"></i>
+          </div>
+          <a href="<?= base_url() ?>index.php/admin/ManageCard" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->

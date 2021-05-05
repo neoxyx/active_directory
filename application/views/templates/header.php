@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?= $title ?></title>
+  <link rel="icon" href="<?= base_url() ?>assets/ico/favicon.ico">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -128,7 +129,7 @@
                     <li>
                       <a href="<?= base_url() ?>assets/#">
                         <div class="pull-left">
-                          <img src="<?= base_url() ?>assets/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="<?= base_url() ?>assets/dist/img/logo.png" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Reviewers
@@ -265,13 +266,13 @@
             <!-- User Account: style can be found in dropdown.less -->
             <li class="dropdown user user-menu">
               <a href="<?= base_url() ?>assets/#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="<?= base_url() ?>assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <img src="<?= base_url() ?>assets/img/logo.png" class="user-image" alt="User Image">
                 <span class="hidden-xs"><?= $nombre ?></span>
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
                 <li class="user-header">
-                  <img src="<?= base_url() ?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <img src="<?= base_url() ?>assets/img/logo.png" class="img-circle" alt="User Image">
 
                   <p>
                     <?= $nombre ?>

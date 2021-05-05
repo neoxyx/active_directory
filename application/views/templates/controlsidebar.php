@@ -275,10 +275,22 @@
   });
 </script>
 <script>
-  var url = 'http://localhost/active_directory/index.php/admin/';
   $('input[type="checkbox"]').change(function() {
     $(this).val(Number(this.checked));
   });
+  $("#CEDULA").blur(function(event) {
+    event.preventDefault();
+    $.ajax({
+      url: "<?= base_url() ?>index.php/admin/SAMAFULLController/getSAMAFULLbyIdent",
+      method: "POST",
+      data: {
+        ident: this.value
+      },
+      success: function(respuesta) {
+        console.log(respuesta);
+      }
+    });
+  })
 </script>
 </body>
 

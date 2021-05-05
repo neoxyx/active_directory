@@ -443,7 +443,7 @@ implement since they demand that you keep track of your queries and
 determine whether to commit or rollback based on the success or failure
 of your queries. This is particularly cumbersome with nested queries. In
 contrast, we’ve implemented a smart transaction system that does all
-this for you automatically (you can also manage your transactions
+this for you automatically (you can also Administrar your transactions
 manually if you choose to, but there’s really no benefit).</p>
 </div>
 <div class="section" id="running-transactions">
@@ -478,7 +478,7 @@ group will not affect any others.</p>
 <h2>Managing Errors<a class="headerlink" href="#managing-errors" title="Permalink to this headline">¶</a></h2>
 <p>If you have error reporting enabled in your config/database.php file
 you’ll see a standard error message if the commit was unsuccessful. If
-debugging is turned off, you can manage your own errors like this:</p>
+debugging is turned off, you can Administrar your own errors like this:</p>
 <div class="highlight-ci"><div class="highlight"><pre><span></span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">trans_start</span><span class="p">();</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s1">&#39;AN SQL QUERY...&#39;</span><span class="p">);</span>
 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s1">&#39;ANOTHER QUERY...&#39;</span><span class="p">);</span>

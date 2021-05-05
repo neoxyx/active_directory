@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -52,3 +52,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+// routes for ADF.
+$route['manage-ADF'] = "admin/Adf/adf";
+$route['edit-ADF/(:num)'] = "admin/Adf/editADF/$1";
+$route['edit-ADF-post'] = "admin/Adf/editADFPost";
+$route['delete-ADF/(:num)'] = "admin/Adf/deleteADF/$1";
+$route['add-ADF'] = "admin/Adf/addADF";
+$route['add-ADF-post'] = "admin/Adf/addADFPost";
+$route['view-ADF/(:num)'] = "admin/Adf/viewADF/$1";
+// end of ADF routes

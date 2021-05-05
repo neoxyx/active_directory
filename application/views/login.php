@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Login | FAC</title>
+  <link rel="icon" href="<?= base_url() ?>assets/ico/favicon.ico">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -27,9 +28,9 @@
 </head>
 
 <body class="hold-transition login-page">
-  <div class="login-box">
+  <div class="login-box" style="background-color: white;">
     <div class="login-logo">
-      <a href="<?= base_url() ?>assets/index2.html"><b>Login</b>FAC</a>
+      <img src="<?= base_url() ?>assets/img/logo2.jpg" alt="FAC" width="160" height="160">
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
@@ -37,24 +38,17 @@
 
       <form method="post" id="frmLogin">
         <div class="form-group has-feedback">
-          <input type="text" name="user" class="form-control" placeholder="Usuario">
+          <input type="text" name="user" class="form-control" placeholder="Usuario" required>
           <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
         </div>
         <div class="form-group has-feedback">
-          <input type="password" name="pass" class="form-control" onkeydown="if (event.keyCode == 13) auth()" placeholder=" Contraseña">
+          <input type="password" name="pass" class="form-control" onkeydown="if (event.keyCode == 13) auth()" placeholder="Contraseña" required>
           <span class="glyphicon glyphicon-lock form-control-feedback"></span>
         </div>
         <div class="row">
-          <!--<div class="col-xs-8">
-            <div class="checkbox icheck">
-              <label>
-                <input type="checkbox"> Recordarme
-              </label>
-            </div>
-          </div>-->
           <!-- /.col -->
-          <div class="col-xs-4">
-            <button type="button" name="login" value="Login" onclick="auth()" class="btn btn-primary btn-block btn-flat">Ingresar</button>
+          <div class="col-xs-12">
+            <input type="submit" name="login" value="Ingresar" class="btn btn-primary btn-block btn-flat" />
           </div>
           <!-- /.col -->
         </div>
@@ -86,7 +80,8 @@
   <script src="<?= base_url() ?>assets/plugins/iCheck/icheck.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script>
-    function auth() {
+    $("#frmLogin").submit(function(e) {
+      e.preventDefault();
       $.ajax({
         url: "<?= base_url() ?>index.php/Login", //url guarda la ruta hacia donde se hace la peticion
         type: $("#frmLogin").attr("method"), // la variable type guarda el tipo de la peticion GET,POST,..      
@@ -104,7 +99,7 @@
           }
         }
       })
-    }
+    })
   </script>
 </body>
 

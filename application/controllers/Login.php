@@ -7,10 +7,10 @@ class Login extends CI_Controller
 	{
 		$user = $this->input->post('user');
 		$pass = $this->input->post('pass');
-		$ldaprdn  = 'cn=' . $user . ',ou=DISEI,dc=seguro,dc=fac,dc=mil,dc=co';     // ldap rdn or dn
+		$ldaprdn  = 'cn=' . $user . ',ou=DISEI,dc=seguro,dc=fac,dc=mil,dc=co'; //',ou=Service Accounts,dc=fac,dc=co';     //test: ou=DISEI,dc=seguro,dc=fac,dc=mil,dc=co ldap rdn or dn
 		$ldappass = $pass;  // associated password
 		// Variables del servidor LDAP
-		$ldaphost = "172.21.10.62";  // servidor LDAP
+		$ldaphost = "172.21.10.62"; //"172.20.101.108"; //test: "172.21.10.62";  // servidor LDAP
 		$ldapport = 389;            // puerto del servidor LDAP
 
 		// Conexión al servidor LDAP
